@@ -1,40 +1,90 @@
 body {
-    margin: 50px;
-    display: flex;
-    justify-content: center;
+    margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-@keyframes pisca {
-    0% {
-        opacity: 0.2;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0.2;
-    }
+h1 {
+    display: flex;
+    justify-content: center;
 }
 
 .urna {
-    background-color: #dbd5c9;
-    padding: 30px;
     display: flex;
+    justify-content: center;
 }
 
-.tela {
-    width: 500px;
-    height: 320px;
-    background: linear-gradient(to right, #E8E8E8, #C1C1C1);
-    border: 1px solid #555;
+.candidatos {
+    background-color: #E8F6FF;
+    width: 250px;
+}
+
+.candidatos h3 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #4a4949;
+}
+
+.area--width {
+    transition: all ease 0.3s;
+}
+
+.area--cabeca {
+    background-color: #638185;
+    border-style: outset;
+    margin: 10px;
+    background-position: center;
+    background-size: cover;
+    height: inherit;
+}
+
+.cabeca {
+    cursor: pointer;
+    background-color: #E8F6FF;
+    background-position: center;
+    background-size: cover;
+}
+
+.cabeca img {
+    max-width: 80px;
+    background-color: #E8F6FF;
+    margin-left: 90px;
+}
+
+.dados {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    font-weight: bold;
+    color: #4a4949;
+}
+
+.area--teclado {
+    width: 320px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #E8F6FF;
+}
+
+.logo img {
+    max-width: 80px;
+    background-color: #E8F6FF;
+}
+
+.logo h2 {
+    margin-left: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #4a4949;
 }
 
 .teclado {
-    margin-left: 30px;
-    background-color: #403a3a;
+    background-color: #1E1D1D;
+    color: #fff;
+    border-style: outset;
 }
 
 .teclado--linha {
@@ -44,122 +94,33 @@ body {
 }
 
 .teclado--botao {
-    width: 70px;
-    height: 40px;
-    background-color: #000;
-    color: #fff;
-    font-size: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px;
+    margin: 0.45rem 1.5rem 0.25rem 0.5rem;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 4px;
+    color: whitesmoke;
+    background-color: #000;
+    box-shadow: 4px -4px 1px #343333;
+    width: 50px;
+    height: 28px;
     cursor: pointer;
-    box-shadow: 3px 3px 0px #555;
 }
 
 .btn-branco {
-    background-color: #fff;
     color: #000;
-    font-size: 15px;
+    background-color: #fff;
+    box-shadow: 4px -4px 1px #aaa6a6b5;
 }
 
 .btn-corrige {
-    background-color: #f09046;
-    color: #000;
-    font-size: 15px;
+    background-color: #c25208;
+    box-shadow: 4px -4px 1px #c25c0882;
 }
 
 .btn-confirme {
-    background-color: #48c079;
-    color: #000;
-    font-size: 15px;
-    width: 80px;
-    height: 50px;
-}
-
-.d-1 {
-    flex: 1;
-    display: flex;
-}
-
-.d-1-left {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding-left: 10px;
-}
-
-.d-1-1 {
-    display: flex;
-    align-items: center;
-}
-
-.d-1-2 {
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.d-1-3 {
-    height: 50px;
-    display: flex;
-    align-items: center;
-}
-
-.numero {
-    display: inline-block;
-    width: 30px;
-    height: 40px;
-    border: 1px solid #000;
-    text-align: center;
-    line-height: 40px;
-    font-size: 25px;
-    margin: 3px;
-}
-
-.pisca {
-    animation-name: pisca;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
-
-.d-1-4 {
-    flex: 1;
-    line-height: 25px;
-}
-
-.d-1-right {
-    width: 90px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.d-1-image {
-    border: 1px solid #000;
-    background-color: #fff;
-    text-align: center;
-    font-size: 14px;
-}
-
-.small {
-    width: 85%;
-    font-size: 12px;
-}
-
-.d-1-image img {
-    width: 100%;
-}
-
-.d-2 {
-    height: 50px;
-    font-size: 14px;
-    border-top: 2px solid #000;
-    padding-left: 10px;
-}
-
-.aviso--grande {
-    font-size: 40px;
-    font-weight: bold;
+    background-color: #06582d;
+    box-shadow: 4px -4px 1px #06582d85;
 }
